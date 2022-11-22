@@ -8,19 +8,16 @@ html body header {
     height: 9rem;
     background-color: #FF872D;
     margin-bottom: 1rem; 
-    display: flex;
-    justify-content: center;
 }
     
 html body header nav.navbar {
-    background-color: #ff882d98;
+    background-color: #ff882dbc;
     padding: 0;
     z-index: 2; 
 }
 
 html body header nav.navbar div.estilo_menu_desplegable {
-    margin: 1rem; 
-    flex-direction: column;
+    margin-top: 1.5rem;
     justify-content: center;
 }
 
