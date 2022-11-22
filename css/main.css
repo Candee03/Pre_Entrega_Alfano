@@ -5,9 +5,12 @@ body {
 
 /* ESTILO DE ENCABEZADO */
 html body header {
-    height: 5rem;
+    height: 9rem;
     background-color: #FF872D;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem; 
+    display: flex;
+    justify-content: center;
+}
     
 html body header nav.navbar {
     background-color: #ff882d98;
