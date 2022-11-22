@@ -1,0 +1,64 @@
+/* ESTILOS GENERALES */
+body {
+    background-color: #FFF3EA;
+}
+
+/* ESTILO DE ENCABEZADO */
+html body header {
+    height: 5rem;
+    background-color: #FF872D;
+    margin-bottom: 1rem; }
+    
+html body header nav.navbar {
+    background-color: #ff882d98;
+    padding: 0;
+    z-index: 2; 
+}
+
+html body header nav.navbar div.estilo_menu_desplegable {
+    margin: 1rem; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+html body header nav.navbar div.estilo_menu_desplegable button {
+    width: 4rem;
+    height: 2.85rem;
+    background-image: url("../img/navbar.png"); }
+
+html body header nav.navbar div.estilo_menu_desplegable button.navbar-toggler:focus {
+    box-shadow: none !important; }
+
+html body header nav.navbar div.estilo_menu_desplegable div ul.navbar-nav li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+html body header nav.navbar div.estilo_menu_desplegable div ul.navbar-nav li a.estilo_link_navbar {
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 0.5rem;
+    margin: 0 1rem; }
+    
+html body header nav.navbar div.estilo_menu_desplegable div ul.navbar-nav li a.select {
+    text-decoration-line: underline; }
+
+/* ESTILO DE CONTENIDO */
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+
+}
+button {
+    border-radius: 5px;
+    margin: 2rem;
+    padding: 0.5rem;
+    background-color: #FF872D;
+    border: black solid 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
