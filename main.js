@@ -1,35 +1,30 @@
-// DECLARACION DE VARIABLES
-let totalDeCompra = 0;
 
 function comprar() {
-    let producto = prompt ("Detalle que funko pop desea comprar según su número de lista:");
-    switch (producto) {
-        case "1":
-            return totalDeCompra += 50;
-        case "2":
-            return totalDeCompra += 60;
-        case "3":
-            return totalDeCompra += 70;
-        case "4":
-            return totalDeCompra += 80;
-        default:
-            alert ("el valor ingresado no es válido")
-            break;
-    }
-}
+    let totalDeCompra = 0;
+    let quererComprar = false;
+    
+    quererComprar = confirm("¿desea realizar una compra?")
+    do {
+        let producto = prompt ("Detalle que funko pop desea comprar según su número de lista:");
+        switch (producto) {
+            case "1":
+                totalDeCompra += 50;
+                break;
+            case "2":
+                totalDeCompra += 60;
+                break;
+            case "3":
+                totalDeCompra += 70;
+                break;
+            case "4":
+                totalDeCompra += 80;
+                break;
+            default:
+                alert ("el valor ingresado no es válido")
+                break;
+        }
+        quererComprar = confirm("¿desea realizar otra compra?")
+    } while (quererComprar);
 
-function preguntar() {
-    let quererComprar = prompt("¿desea realizar una compra?").toUpperCase()
-    switch (quererComprar) {
-        case "SI":
-            while (quererComprar == "SI") {
-                comprar()
-                quererComprar = prompt ("¿desea realizar otra compra?").toUpperCase()
-            }
-        case "NO":
-            return alert("el total de su compra es: $"+ totalDeCompra);
-        default:
-            return alert ("el valor ingresado no es válido")
-    }
+    return alert("el total de su compra es: $"+ totalDeCompra);
 }
-
