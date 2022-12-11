@@ -40,23 +40,3 @@ const productos = [
         descripcion: "funko pop",
     },
 ]
-
-
-
-// class Producto {
-//     constructor(id, nombre, precio) {
-//         this.id = id;
-//         this.nombre  = nombre.toUpperCase();
-//         this.precio  = parseFloat(precio);
-//         this.vendido = false;
-//     }
-//     sumaIva() {
-//         this.precio = this.precio * 1.21;
-//     }
-// }
-
-// const productos = [];
-
-// productos.push(new Producto("batman", 500));
-// productos.push(new Producto("superman", 650));
-// productos.push(new Producto("robin", 400));

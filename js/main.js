@@ -1,8 +1,7 @@
 
 const mostrarEnListaOrdenada = () => {
-    const listaOrdenada = productos.map(producto => {
-        return producto.nombre +" $"+ producto.precio
-    })
+    const listaOrdenada = productos.map(producto => producto.nombre +" $"+ producto.precio)
+
     alert ("lista de productos" +'\n\n'+ listaOrdenada.join("\n"))
     comprarProductos(listaOrdenada)
 }
@@ -30,9 +29,7 @@ const comprarProductos = (listaProductos) => {
 
 
 const confirmarCompra = () => {
-    const listaProductos = carrito.map(producto => {
-        return producto.nombre +" | Cantidad: "+ producto.cantidad
-    })
+    const listaProductos = carrito.map(producto => producto.nombre +" | Cantidad: "+ producto.cantidad)
 
     const confirmar = confirm ("Checkout: "
     +"\n\n"+listaProductos.join("\n")
@@ -59,8 +56,7 @@ const finalizarCompra = (listaProductos) => {
 }
 
 const comprar = () => {
-    const productosBaratos = confirm("Desea ver primero los productos mas baratos?")
-
+    const productosBaratos = confirm("Desea ver arriba en la lista los productos mas baratos?")
     if (productosBaratos) {
         ordenarMenorMayor()
     }else {
@@ -69,64 +65,3 @@ const comprar = () => {
 }
 
 comprar()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function comprar() {
-//     let totalDeCompra = 0;
-//     let quererComprar = false;
-//     if (quererComprar = confirm("¿desea realizar una compra?")) {
-//         do {
-//             let producto = prompt ("Detalle que funko pop desea comprar según su número de lista:");
-//             switch (producto) {
-//                 case "1":
-//                     totalDeCompra += 50;
-//                     break;
-//                 case "2":
-//                     totalDeCompra += 60;
-//                     break;
-//                 case "3":
-//                     totalDeCompra += 70;
-//                     break;
-//                 case "4":
-//                     totalDeCompra += 80;
-//                     break;
-//                 default:
-//                     alert ("el valor ingresado no es válido")
-//                     break;
-//             }
-//             quererComprar = confirm("¿desea realizar otra compra?")
-//         } while (quererComprar);
-//     }
-//     else {
-//         return alert("el total de su compra es: $"+ totalDeCompra);
-//     }
-    
-//     return alert("el total de su compra es: $"+ totalDeCompra);
-// }
-
-
-
-
