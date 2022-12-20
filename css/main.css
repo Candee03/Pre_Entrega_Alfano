@@ -1,64 +1,66 @@
 /* ESTILOS GENERALES */
 body {
-    background-color: #FFF3EA;
+    background-color: #D5D5D5;;
 }
-
-/* ESTILO DE ENCABEZADO */
-html body header {
-    height: 9rem;
-    background-color: #FF872D;
-    margin-bottom: 1rem; 
+.img-producto-carrito {
+    width: 50px;
 }
-    
-html body header nav.navbar {
-    background-color: #ff882dbc;
-    padding: 0;
-    z-index: 2; 
+.cont-card {
+    padding: 34px;
+    background-color: #FFFAFA;
+    border-radius: 10px;
 }
-
-html body header nav.navbar div.estilo_menu_desplegable {
-    margin-top: 1.5rem;
-    justify-content: center;
+.img-card {
+    width: 252px;
 }
-
-html body header nav.navbar div.estilo_menu_desplegable button {
-    width: 4rem;
-    height: 2.85rem;
-    background-image: url("../img/navbar.png"); }
-
-html body header nav.navbar div.estilo_menu_desplegable button.navbar-toggler:focus {
-    box-shadow: none !important; }
-
-html body header nav.navbar div.estilo_menu_desplegable div ul.navbar-nav li {
+#tienda {
     display: flex;
-    flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-html body header nav.navbar div.estilo_menu_desplegable div ul.navbar-nav li a.estilo_link_navbar {
-    color: black;
-    font-size: 25px;
+.cont-fav {
+    background-color: gray;
+}
+/* ESTILO DE ENCABEZADO */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #FFFAFA;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+header .h1-header {
+    color: #040404;
+    font-family: 'Limelight';
+    font-style: normal;
     font-weight: 400;
-    text-transform: uppercase;
-    list-style: none;
-    text-decoration: none;
-    padding-top: 0.5rem;
-    margin: 0 1rem; }
-    
-html body header nav.navbar div.estilo_menu_desplegable div ul.navbar-nav li a.select {
-    text-decoration-line: underline; }
-
+    font-size: 96px;
+    line-height: 117px;
+    letter-spacing: -0.025em;
+    margin-right: 3rem;
+}
 /* ESTILO DE CONTENIDO */
 h1 {
     text-transform: uppercase;
     text-align: center;
 
 }
-button {
+#verCarrito, #favoritos {
+    margin: 0 1.5rem;
     border-radius: 5px;
-    margin: 2rem;
     padding: 0.5rem;
     background-color: #FF872D;
     border: black solid 1px;
     text-transform: uppercase;
     font-weight: 500;
+}
+.btn-card {
+    border: none;
+    background: transparent;
+}
+
+.add-favoritos, .add-carrito {
+    width: 30px;
 }

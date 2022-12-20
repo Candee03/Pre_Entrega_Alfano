@@ -6,6 +6,7 @@ const productos = [
         precio: 500,
         cantidad: 0,
         descripcion: "funko pop",
+        img: src="img/lego.png",
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ const productos = [
         precio: 400,
         cantidad: 0,
         descripcion: "funko pop",
+        img:src="img/lego.png",
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ const productos = [
         precio: 550,
         cantidad: 0,
         descripcion: "funko pop",
+        img:src="img/lego.png",
     },
     {
         id: 4,
@@ -30,6 +33,7 @@ const productos = [
         precio: 600,
         cantidad: 0,
         descripcion: "funko pop",
+        img:src="img/lego.png",
     },
     {
         id: 5,
@@ -38,5 +42,6 @@ const productos = [
         precio: 520,
         cantidad: 0,
         descripcion: "funko pop",
+        img:src="img/lego.png",
     },
 ]
