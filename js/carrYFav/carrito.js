@@ -1,32 +1,27 @@
-const carrito = [];
+let carrito = [];
 
+const traerCarrito = () => {
+    if (localStorage.getItem("carrito")) {
+        carrito = getCarritoStorage();
+    }
+}
+const getCarritoStorage = () => {
+const carritoStorage = JSON.parse(localStorage.getItem('carrito'));
+    return carritoStorage;
+};
 
 const agregarAlCarrito = (producto, idProducto) => {
     const productoRepetido = carrito.find(producto => producto.id === idProducto);
     if (productoRepetido) {
-        productoRepetido.cantidad += 1;
+        productoRepetido.cantidad ++;
+        mostrarCarrito()
+        //AGREGANDO AL LOCAL STORAGE
+        localStorage.setItem('carrito', JSON.stringify(carrito));
     }else {
-        producto.cantidad += 1;
+        producto.cantidad ++;
         carrito.push(producto)
+        mostrarCarrito()
+        //AGREGANDO AL LOCAL STORAGE
+        localStorage.setItem('carrito', JSON.stringify(carrito));
     }
 }
-
-
-
-
-
-
-
-
-// const eliminarProductoCarrito = (productoAEliminar) => {
-//     carrito.forEach((producto, index)=> {
-//         if(producto.nombre.toLowerCase() === productoAEliminar.toLowerCase()) {
-//             if (producto.cantidad >1) {
-//                 producto.cantidad--
-//             }else {
-//                 carrito.splice(index, 1)
-//             }
-//         }
-//     })
-//     confirmarCompra()
-// }

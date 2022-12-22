@@ -24,7 +24,7 @@ const productos = [
         precio: 550,
         cantidad: 0,
         descripcion: "funko pop",
-        img:src="img/lego.png",
+        img:src="img/lego2.png",
     },
     {
         id: 4,

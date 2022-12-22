@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -16,20 +19,28 @@
     <!-- ENCABEZADO -->
     <header>
         <h1 class="h1-header">Toy's Store</h1>
-        <button id="verCarrito">ver carrito</button>
-        <button id="favoritos">favoritos</button>
-        
-        <button id="cerrarCarrito">cerrar</button>
+        <div class="botones">
+            <button id="favoritos"><img class="logo-header" src="img/logos/favorito-header.png" alt=""></button>
+            <button id="verCarrito"><img class="logo-header" src="img/logos/carrito-header.png" alt=""></button>
+            
+            <button id="cerrar"><img class="logo-header" src="img/logos/cerrar.png" alt=""></button>
+        </div>
     </header>
     <!-- CONTENIDO -->
-    <main>
+    <main id="main-index">
         <div id="miCarrito"></div>
         <div id="misFavoritos"></div>
-        <section id="filtros">
-            <button id="menorAMayor"></button>
-            <button id="mayorAMenor"></button>
+        <section id="section-index">
+            <article id="filtros">
+                <div class="cont-filtros">
+                    <h2 class="title-filter">filtros:</h2>
+                    <button class="btn-filtro" id="quitarFiltros"></button>
+                    <button class="btn-filtro" id="menorAMayor"></button>
+                    <button class="btn-filtro" id="mayorAMenor"></button>
+                </div>
+            </article>
+            <article id="tienda"></article>
         </section>
-        <section id="tienda"></section>
     </main>
     <!--LINK A JS-->
     <script src="js/stock.js"></script>
