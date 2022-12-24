@@ -3,6 +3,7 @@ let carrito = [];
 const traerCarrito = () => {
     if (localStorage.getItem("carrito")) {
         carrito = getCarritoStorage();
+        mostrarCarrito()
     }
 }
 const getCarritoStorage = () => {
