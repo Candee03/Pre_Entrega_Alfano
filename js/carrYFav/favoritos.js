@@ -10,7 +10,6 @@ const favStorage = JSON.parse(localStorage.getItem('favoritos'));
     return favStorage;
 };
 
-
 const agregarAFav = (producto, idProducto) => {
     const productoRepetido = favoritos.find(producto => producto.id === idProducto);
     if (productoRepetido) {

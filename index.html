@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CDN sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- CDN toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
     <title>Toy's Store</title>
@@ -28,6 +31,7 @@
     </header>
     <!-- CONTENIDO -->
     <main id="main-index">
+        <div id="blur"></div>
         <div id="miCarrito"></div>
         <div id="misFavoritos">
         </div>
@@ -35,8 +39,13 @@
             <article id="filtros">
                 <div class="cont-filtros">
                     <h2 class="title-filter">filtros:</h2>
-                    <button class="btn-filtro" id="menorAMayor"></button>
-                    <button class="btn-filtro" id="mayorAMenor"></button>
+                    <select id="ordenador" autofocus="menorAMayor">
+                        <option value="menorAMayor">Menor precio arriba</option>
+                        <option value="mayorAMenor">Mayor precio arriba</option>
+                    </select>
+                    <button class="btn-filtro" id="dc">dc</button>
+                    <button class="btn-filtro" id="marvel">marvel</button>
+                    <button class="btn-filtro" id="starWars">Star Wars</button>
                     <button class="btn-filtro" id="quitarFiltros"></button>
                 </div>
             </article>
@@ -44,13 +53,10 @@
         </section>
     </main>
     <!--LINK A JS-->
-    <script src="js/stock.js"></script>
     <script src="js/carrYFav/carrito.js"></script>
     <script src="js/carrYFav/favoritos.js"></script>
     <script src="js/filtros/filtros.js"></script>
     <script src="js/main.js"></script>
     <script src="index.js"></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

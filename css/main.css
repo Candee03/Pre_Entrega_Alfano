@@ -1,246 +1,298 @@
-/* ESTILOS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none; }
+
 body {
-    background-color: #cbcbcb;;
-}
-
-/* ESTILOS DE CARD */
-.cont-card {
-    width: 320px;
-    background-color: #FFFAFA;
-    border-radius: 10px;
-}
-.img-card {
-    width: 100%;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-}
-.card-nombre-producto, .card-descripcion-producto {
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    margin: 0rem 2rem;
-}
-#contCard {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem;
-}
-.btn-card {
-    border: none;
-    background: transparent;
-}
-
-.btn-card :hover {
-    transform: scale(1.5);
-}
-.title-filter {
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    text-transform: uppercase;
-}
-.btn-filtro {
-    background: transparent;
-    border: solid #040404 2px;
-    border-radius: 10px;
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-}
-.select {
-    background: rgb(252, 229, 190);
-    border: solid #FF872D 2px;
-    border-radius: 10px;
-}
-.add-favoritos, .add-carrito {
-    width: 30px;
-}
-/* ESTILO DE ENCABEZADO */
-header {
+  background-color: #cbcbcb; }
+  body header {
+    height: 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #FFFAFA;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-}
-header .h1-header {
-    color: #040404;
-    font-family: 'Limelight';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 96px;
-    line-height: 117px;
-    letter-spacing: -0.025em;
-    margin-left: 10rem;
-}
-#verCarrito, #favoritos, #cerrar {
-    width: 60px;
-    height: 60px;
-    margin: 0 1rem;
-    border-radius: 100px;
-    background-color: #FF872D;
-    border: none;
-}
-
-.logo-header {
-    width: 40px;
-}
-#section-index {
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-}
-#filtros {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 1.5rem;
-}
-#filtros .cont-filtros {
-    padding: 1.5rem;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-    background: #FFFAFA;
-    border-radius: 10px;
-    width: 300px;
-    height: 400px;
-}
-
-
-/* ESTILO DE CONTENIDO */
-#main-index {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); }
+    body header .h1-header {
+      color: #040404;
+      font-family: 'Limelight';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 96px;
+      line-height: 117px;
+      letter-spacing: -0.025em;
+      margin-left: 10rem; }
+    body header .botones #verCarrito, body header .botones #favoritos, body header .botones #cerrar {
+      width: 60px;
+      height: 60px;
+      margin: 0 1rem;
+      border-radius: 100px;
+      background-color: #FF872D;
+      border: none; }
+      body header .botones #verCarrito .logo-header, body header .botones #favoritos .logo-header, body header .botones #cerrar .logo-header {
+        width: 40px; }
+  body #main-index {
     display: flex;
     justify-content: center;
-    flex-direction: row-reverse;
-}
-#section-index {
-    width: 95%;
-}
-#tienda {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-/* FAVORITOS */
-.img-producto-favoritos {
-    width: 80px;
-}
-.precio-fav, .descripcion-fav {
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-}
-.div-fav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 1rem;
-    padding: 0.5rem;
-    border-top: solid 2px black;
-}
-.cont-fav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(252, 229, 190);
-    border-bottom: solid 2px black;
-}
-/* CARRITO */
-.img-producto-carrito {
-    width: 80px;
-    margin: 0 0.5rem;
-}
-.descripcion-carrito, .precio, .cantidad-carrito {
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    margin: 0;
-}
-.cont2 {
-    border: #040404 1px solid;
-}
-.boton {
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    border: none;
-    padding: 0;
-    background: none;
-    margin: 0 0.5rem;
-}
-.div-carr {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0.5rem;
-    padding: 0.5rem 0;
-    border-top: solid 2px black;
-}
-.div-carr .cont1, .div-carr .cont2, .div-carr .cont3 {
-    display: flex;
-    align-items: center;
-    margin: 0 0.5rem;
-}
-.titulo-carrito {
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    text-align: center;
-}
-.trash {
-    background: transparent;
-    border: none;
-}
-.img-trash-carrito {
-    width: 30px;
-}
-.cont-carr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(252, 229, 190);
-    border-bottom: solid 2px black;
-}
-.cont-btn-comprar {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 2rem;
-    border-top: solid 2px black;
-}
-.contenedor-total {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 0;
-}
-#comprar {
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    background-color: #FF872D;
-    border: none;
-
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-.txt-total, #resultado-total {
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    text-transform: uppercase;
-
-}
+    flex-direction: row-reverse; }
+    body #main-index #blur.blurred {
+      position: absolute;
+      left: 0;
+      background-color: black;
+      opacity: 50%;
+      height: 100%;
+      width: calc(100% - 40rem);
+      z-index: 2; }
+    body #main-index #miCarrito.cont-carr {
+      display: flex;
+      background-color: #FFFAFA;
+      border-bottom: solid 2px black;
+      position: absolute;
+      right: 0;
+      width: 40rem;
+      height: calc(100vh - 125px);
+      z-index: 2; }
+      body #main-index #miCarrito.cont-carr .carritoVacio {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #b0b0b0;
+        text-align: center; }
+      body #main-index #miCarrito.cont-carr .titulo-carrito {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        text-align: center;
+        text-transform: capitalize; }
+      body #main-index #miCarrito.cont-carr .div-carr {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0.5rem;
+        padding: 0.5rem 0;
+        border-top: solid 2px black; }
+        body #main-index #miCarrito.cont-carr .div-carr .cont1 .img-producto-carrito {
+          width: 80px;
+          margin: 0 0.5rem; }
+        body #main-index #miCarrito.cont-carr .div-carr .cont1 .descripcion-carrito, body #main-index #miCarrito.cont-carr .div-carr .cont1 .precio, body #main-index #miCarrito.cont-carr .div-carr .cont1 .cantidad-carrito {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          margin: 0;
+          overflow: hidden;
+          height: 5rem; }
+        body #main-index #miCarrito.cont-carr .div-carr .cont3 div .precio {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px; }
+        body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont2 {
+          border: #040404 1px solid; }
+          body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont2 .cantidad-carrito {
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            margin: 0; }
+          body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont2 .boton {
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            border: none;
+            padding: 0;
+            background: none;
+            margin: 0 0.5rem; }
+        body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont-trash .trash {
+          background: transparent;
+          border: none;
+          padding: 0.5rem; }
+          body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont-trash .trash .img-trash-carrito {
+            width: 30px; }
+      body #main-index #miCarrito.cont-carr .div-carr .cont1, body #main-index #miCarrito.cont-carr .div-carr .cont2, body #main-index #miCarrito.cont-carr .div-carr .cont3 {
+        display: flex;
+        align-items: center;
+        margin: 0 0.5rem; }
+      body #main-index #miCarrito.cont-carr .cont-btn-comprar {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 2rem;
+        border-top: solid 2px black; }
+        body #main-index #miCarrito.cont-carr .cont-btn-comprar .contenedor-total {
+          display: flex;
+          justify-content: space-between;
+          margin: 1rem 0; }
+          body #main-index #miCarrito.cont-carr .cont-btn-comprar .contenedor-total .txt-total, body #main-index #miCarrito.cont-carr .cont-btn-comprar .contenedor-total #resultado-total {
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            text-transform: uppercase; }
+        body #main-index #miCarrito.cont-carr .cont-btn-comprar #comprar {
+          border-radius: 10px;
+          padding: 0.5rem 1rem;
+          background-color: #FF872D;
+          border: none;
+          color: #FFFAFA;
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          text-transform: uppercase;
+          text-align: center; }
+    body #main-index #misFavoritos.cont-fav {
+      display: flex;
+      background-color: #FFFAFA;
+      border-bottom: solid 2px black;
+      position: absolute;
+      right: 0;
+      width: 40rem;
+      height: calc(100vh - 125px);
+      z-index: 2; }
+      body #main-index #misFavoritos.cont-fav .favoritosVacio {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        text-align: center; }
+      body #main-index #misFavoritos.cont-fav .tituloMisFav {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        text-align: center;
+        text-transform: capitalize; }
+      body #main-index #misFavoritos.cont-fav .div-fav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 1rem;
+        padding: 0.5rem;
+        border-top: solid 2px black; }
+        body #main-index #misFavoritos.cont-fav .div-fav .img-producto-favoritos {
+          width: 80px; }
+        body #main-index #misFavoritos.cont-fav .div-fav .precio-fav, body #main-index #misFavoritos.cont-fav .div-fav .descripcion-fav {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 26px; }
+        body #main-index #misFavoritos.cont-fav .div-fav .cont-trash-fav .trash {
+          padding: 0.5rem;
+          background: transparent; }
+          body #main-index #misFavoritos.cont-fav .div-fav .cont-trash-fav .trash .img-trash-favoritos {
+            width: 30px; }
+    body #main-index #section-index {
+      width: 95%;
+      margin: 2rem 0;
+      display: grid;
+      grid-template-columns: 18rem auto; }
+      body #main-index #section-index #filtros {
+        margin-top: 0.5rem; }
+        body #main-index #section-index #filtros .cont-filtros {
+          position: fixed;
+          padding: 1.5rem;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+          background: #FFFAFA;
+          border-radius: 10px;
+          width: 14rem;
+          min-height: 22rem;
+          height: calc(100vh - 26rem);
+          box-shadow: rgba(0, 0, 0, 0.3) 1px 5px 10px; }
+          body #main-index #section-index #filtros .cont-filtros h2.title-filter {
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            text-transform: capitalize; }
+          body #main-index #section-index #filtros .cont-filtros #ordenador {
+            border: solid #040404 2px;
+            border-radius: 10px;
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            text-transform: capitalize;
+            height: 2.5rem; }
+          body #main-index #section-index #filtros .cont-filtros #quitarFiltros {
+            margin-top: 5rem; }
+          body #main-index #section-index #filtros .cont-filtros #quitarFiltros:hover {
+            background: #fce5be;
+            border: solid #FF872D 2px;
+            border-radius: 10px; }
+          body #main-index #section-index #filtros .cont-filtros .btn-filtro {
+            padding: 0.3rem;
+            background: transparent;
+            border: solid #040404 2px;
+            border-radius: 10px;
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            text-transform: capitalize;
+            height: 2.5rem; }
+            body #main-index #section-index #filtros .cont-filtros .btn-filtro .p-quitar-filtros {
+              margin: 0; }
+              body #main-index #section-index #filtros .cont-filtros .btn-filtro .p-quitar-filtros .quitar-filtros {
+                width: 15px; }
+          body #main-index #section-index #filtros .cont-filtros .select {
+            background: #fce5be;
+            border: solid #FF872D 2px;
+            border-radius: 10px; }
+      body #main-index #section-index #tienda {
+        display: grid;
+        grid-template-columns: auto auto auto; }
+        body #main-index #section-index #tienda .cont-card:hover {
+          transform: scale(1.05); }
+        body #main-index #section-index #tienda .cont-card {
+          margin: 0.5rem;
+          width: 20rem;
+          height: 26rem;
+          background-color: #FFFAFA;
+          border-radius: 10px; }
+          body #main-index #section-index #tienda .cont-card .img-card {
+            width: 100%;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 10px; }
+          body #main-index #section-index #tienda .cont-card .description {
+            margin-top: 1rem; }
+            body #main-index #section-index #tienda .cont-card .description .card-nombre-producto {
+              font-family: 'Lexend';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20px;
+              margin: 0rem 2rem; }
+            body #main-index #section-index #tienda .cont-card .description .card-descripcion-producto {
+              font-family: 'Lexend';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              margin: 0rem 2rem 1rem 2rem; }
+          body #main-index #section-index #tienda .cont-card #contCard {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 2rem 1.5rem 2rem; }
+            body #main-index #section-index #tienda .cont-card #contCard h2.precio {
+              font-family: 'Lexend';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 32px; }
+            body #main-index #section-index #tienda .cont-card #contCard div#contAdds .btn-card {
+              border: none;
+              background: transparent; }
+              body #main-index #section-index #tienda .cont-card #contCard div#contAdds .btn-card .add-favoritos, body #main-index #section-index #tienda .cont-card #contCard div#contAdds .btn-card .add-carrito {
+                width: 30px; }
+            body #main-index #section-index #tienda .cont-card #contCard div#contAdds .btn-card :hover {
+              transform: scale(1.5); }

@@ -7,7 +7,7 @@ const traerCarrito = () => {
     }
 }
 const getCarritoStorage = () => {
-const carritoStorage = JSON.parse(localStorage.getItem('carrito'));
+    const carritoStorage = JSON.parse(localStorage.getItem('carrito'));
     return carritoStorage;
 };
 
@@ -19,6 +19,7 @@ const agregarAlCarrito = (producto, idProducto) => {
         //AGREGANDO AL LOCAL STORAGE
         localStorage.setItem('carrito', JSON.stringify(carrito));
     }else {
+        producto.inCart = true
         producto.cantidad ++;
         carrito.push(producto)
         mostrarCarrito()
