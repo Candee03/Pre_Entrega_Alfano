@@ -1,3 +1,421 @@
+body#bodyComprar {
+  background-color: #FFFAFA; }
+  body#bodyComprar main#main-Comprar {
+    margin-top: 2rem; }
+    body#bodyComprar main#main-Comprar #section-form {
+      padding: 1rem 0; }
+      body#bodyComprar main#main-Comprar #section-form #h1-formulario {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 2rem; }
+      body#bodyComprar main#main-Comprar #section-form .row {
+        justify-content: center; }
+        body#bodyComprar main#main-Comprar #section-form .row div .form-label {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px; }
+        body#bodyComprar main#main-Comprar #section-form .row div .form-control, body#bodyComprar main#main-Comprar #section-form .row div .form-select {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          border-radius: 10px;
+          border: black 2px solid; }
+        body#bodyComprar main#main-Comprar #section-form .row div.div-btn-siguiente {
+          display: flex;
+          justify-content: center; }
+          body#bodyComprar main#main-Comprar #section-form .row div.div-btn-siguiente .btn-siguiente {
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            border-radius: 10px;
+            padding: 0.5rem 1rem;
+            background-color: #FF872D;
+            border: none;
+            color: #FFFAFA;
+            text-transform: uppercase;
+            text-align: center; }
+    body#bodyComprar main#main-Comprar #section-resumen-compra {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body#bodyComprar main#main-Comprar #section-resumen-compra .div-resumen {
+        width: 60%; }
+        body#bodyComprar main#main-Comprar #section-resumen-compra .div-resumen .subtitulo-resumen {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 26px;
+          text-align: center; }
+        body#bodyComprar main#main-Comprar #section-resumen-compra .div-resumen .p-resumen-fecha {
+          text-align: end;
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px; }
+        body#bodyComprar main#main-Comprar #section-resumen-compra .div-resumen .p-resumen {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px; }
+      body#bodyComprar main#main-Comprar #section-resumen-compra .ul-listaResumen {
+        padding: 0 1rem;
+        margin: 0;
+        width: 60vw; }
+        body#bodyComprar main#main-Comprar #section-resumen-compra .ul-listaResumen .li-listaResumen {
+          padding: 0.5rem 0;
+          border-bottom: 2px black solid;
+          display: flex;
+          justify-content: space-between; }
+          body#bodyComprar main#main-Comprar #section-resumen-compra .ul-listaResumen .li-listaResumen .li-nombre {
+            margin: 0;
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            width: 15rem; }
+          body#bodyComprar main#main-Comprar #section-resumen-compra .ul-listaResumen .li-listaResumen .li-cant {
+            margin: 0;
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px; }
+          body#bodyComprar main#main-Comprar #section-resumen-compra .ul-listaResumen .li-listaResumen .li-precio {
+            margin: 0;
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px; }
+      body#bodyComprar main#main-Comprar #section-resumen-compra .div-cantTotal {
+        margin-top: 1rem;
+        width: 60%;
+        display: flex;
+        justify-content: flex-end; }
+        body#bodyComprar main#main-Comprar #section-resumen-compra .div-cantTotal .p-cantTotal {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px; }
+      body#bodyComprar main#main-Comprar #section-resumen-compra .div-precioTotal {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end; }
+        body#bodyComprar main#main-Comprar #section-resumen-compra .div-precioTotal .p-Total {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px; }
+      body#bodyComprar main#main-Comprar #section-resumen-compra button .link-confirmarYVolver {
+        text-decoration: none;
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        background-color: #FF872D;
+        border: none;
+        color: #FFFAFA;
+        text-transform: uppercase;
+        text-align: center; }
+
+body #main-index {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse; }
+  body #main-index #blur.blurred {
+    position: absolute;
+    left: 0;
+    background-color: black;
+    opacity: 50%;
+    height: 100%;
+    width: calc(100% - 40rem);
+    z-index: 2; }
+  body #main-index #miCarrito.cont-carr {
+    display: flex;
+    background-color: #FFFAFA;
+    border-bottom: solid 2px black;
+    position: absolute;
+    right: 0;
+    width: 40rem;
+    height: calc(100vh - 125px);
+    z-index: 2; }
+    body #main-index #miCarrito.cont-carr .carritoVacio {
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      color: #b0b0b0;
+      text-align: center; }
+    body #main-index #miCarrito.cont-carr .titulo-carrito {
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      text-align: center;
+      text-transform: capitalize; }
+    body #main-index #miCarrito.cont-carr .div-carr {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0.5rem;
+      padding: 0.5rem 0;
+      border-top: solid 2px black; }
+      body #main-index #miCarrito.cont-carr .div-carr .cont1 .img-producto-carrito {
+        width: 80px;
+        margin: 0 0.5rem; }
+      body #main-index #miCarrito.cont-carr .div-carr .cont1 .descripcion-carrito, body #main-index #miCarrito.cont-carr .div-carr .cont1 .precio, body #main-index #miCarrito.cont-carr .div-carr .cont1 .cantidad-carrito {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        margin: 0;
+        overflow: hidden;
+        height: 5rem; }
+      body #main-index #miCarrito.cont-carr .div-carr .cont3 div .precio {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px; }
+      body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont2 {
+        border: #040404 1px solid; }
+        body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont2 .cantidad-carrito {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          margin: 0; }
+        body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont2 .boton {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 26px;
+          border: none;
+          padding: 0;
+          background: none;
+          margin: 0 0.5rem; }
+      body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont-trash .trash {
+        background: transparent;
+        border: none;
+        padding: 0.5rem; }
+        body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont-trash .trash .img-trash-carrito {
+          width: 30px; }
+    body #main-index #miCarrito.cont-carr .div-carr .cont1, body #main-index #miCarrito.cont-carr .div-carr .cont2, body #main-index #miCarrito.cont-carr .div-carr .cont3 {
+      display: flex;
+      align-items: center;
+      margin: 0 0.5rem; }
+    body #main-index #miCarrito.cont-carr .cont-btn-comprar {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 2rem;
+      border-top: solid 2px black; }
+      body #main-index #miCarrito.cont-carr .cont-btn-comprar .contenedor-total {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0; }
+        body #main-index #miCarrito.cont-carr .cont-btn-comprar .contenedor-total .txt-total, body #main-index #miCarrito.cont-carr .cont-btn-comprar .contenedor-total #resultado-total {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+          text-transform: uppercase; }
+      body #main-index #miCarrito.cont-carr .cont-btn-comprar #comprar {
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        background-color: #FF872D;
+        border: none;
+        color: #FFFAFA;
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center; }
+  body #main-index #misFavoritos.cont-fav {
+    display: flex;
+    background-color: #FFFAFA;
+    border-bottom: solid 2px black;
+    position: absolute;
+    right: 0;
+    width: 40rem;
+    height: calc(100vh - 125px);
+    z-index: 2; }
+    body #main-index #misFavoritos.cont-fav .favoritosVacio {
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      text-align: center; }
+    body #main-index #misFavoritos.cont-fav .tituloMisFav {
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      text-align: center;
+      text-transform: capitalize; }
+    body #main-index #misFavoritos.cont-fav .div-fav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 1rem;
+      padding: 0.5rem;
+      border-top: solid 2px black; }
+      body #main-index #misFavoritos.cont-fav .div-fav .img-producto-favoritos {
+        width: 80px; }
+      body #main-index #misFavoritos.cont-fav .div-fav .precio-fav, body #main-index #misFavoritos.cont-fav .div-fav .descripcion-fav {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px; }
+      body #main-index #misFavoritos.cont-fav .div-fav .cont-trash-fav .trash {
+        padding: 0.5rem;
+        background: transparent; }
+        body #main-index #misFavoritos.cont-fav .div-fav .cont-trash-fav .trash .img-trash-favoritos {
+          width: 30px; }
+  body #main-index #section-index {
+    width: 95%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 18rem auto; }
+    body #main-index #section-index #filtros {
+      margin-top: 0.5rem; }
+      body #main-index #section-index #filtros .cont-filtros {
+        position: fixed;
+        padding: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        background: #FFFAFA;
+        border-radius: 10px;
+        width: 14rem;
+        min-height: 22rem;
+        height: calc(100vh - 26rem);
+        box-shadow: rgba(0, 0, 0, 0.3) 1px 5px 10px; }
+        body #main-index #section-index #filtros .cont-filtros h2.title-filter {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+          text-transform: capitalize; }
+        body #main-index #section-index #filtros .cont-filtros #ordenador {
+          border: solid #040404 2px;
+          border-radius: 10px;
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 25px;
+          text-transform: capitalize;
+          height: 2.5rem; }
+        body #main-index #section-index #filtros .cont-filtros #quitarFiltros {
+          margin-top: 5rem; }
+        body #main-index #section-index #filtros .cont-filtros #quitarFiltros:hover {
+          background: #fce5be;
+          border: solid #FF872D 2px;
+          border-radius: 10px; }
+        body #main-index #section-index #filtros .cont-filtros .btn-filtro {
+          padding: 0.3rem;
+          background: transparent;
+          border: solid #040404 2px;
+          border-radius: 10px;
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 25px;
+          text-transform: capitalize;
+          height: 2.5rem; }
+          body #main-index #section-index #filtros .cont-filtros .btn-filtro .p-quitar-filtros {
+            margin: 0; }
+            body #main-index #section-index #filtros .cont-filtros .btn-filtro .p-quitar-filtros .quitar-filtros {
+              width: 15px; }
+        body #main-index #section-index #filtros .cont-filtros .select {
+          background: #fce5be;
+          border: solid #FF872D 2px;
+          border-radius: 10px; }
+    body #main-index #section-index #tienda {
+      display: grid;
+      grid-template-columns: auto auto auto; }
+      body #main-index #section-index #tienda .cont-card:hover {
+        transform: scale(1.05); }
+      body #main-index #section-index #tienda .cont-card {
+        margin: 0.5rem;
+        width: 20rem;
+        height: 26rem;
+        background-color: #FFFAFA;
+        border-radius: 10px; }
+        body #main-index #section-index #tienda .cont-card .img-card {
+          width: 100%;
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+          border-radius: 10px; }
+        body #main-index #section-index #tienda .cont-card .description {
+          margin-top: 1rem;
+          height: 6.5rem; }
+          body #main-index #section-index #tienda .cont-card .description .card-nombre-producto {
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            margin: 0rem 2rem; }
+          body #main-index #section-index #tienda .cont-card .description .card-descripcion-producto {
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            margin: 0rem 2rem 1rem 2rem; }
+        body #main-index #section-index #tienda .cont-card #contCard {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 0 2rem 1.5rem 2rem; }
+          body #main-index #section-index #tienda .cont-card #contCard h2.precio {
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px; }
+          body #main-index #section-index #tienda .cont-card #contCard div#contAdds .btn-card {
+            border: none;
+            background: transparent; }
+            body #main-index #section-index #tienda .cont-card #contCard div#contAdds .btn-card .add-favoritos, body #main-index #section-index #tienda .cont-card #contCard div#contAdds .btn-card .add-carrito {
+              width: 30px; }
+          body #main-index #section-index #tienda .cont-card #contCard div#contAdds .btn-card :hover {
+            transform: scale(1.5); }
+
+body header {
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFAFA;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); }
+  body header .h1-header {
+    color: #040404;
+    font-family: 'Limelight';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 117px;
+    letter-spacing: -0.025em;
+    margin-left: 10rem; }
+  body header .botones #verCarrito, body header .botones #favoritos, body header .botones #cerrar {
+    width: 60px;
+    height: 60px;
+    margin: 0 1rem;
+    border-radius: 100px;
+    background-color: #FF872D;
+    border: none; }
+    body header .botones #verCarrito .logo-header, body header .botones #favoritos .logo-header, body header .botones #cerrar .logo-header {
+      width: 40px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -8,291 +426,3 @@
 
 body {
   background-color: #cbcbcb; }
-  body header {
-    height: 8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #FFFAFA;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); }
-    body header .h1-header {
-      color: #040404;
-      font-family: 'Limelight';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 96px;
-      line-height: 117px;
-      letter-spacing: -0.025em;
-      margin-left: 10rem; }
-    body header .botones #verCarrito, body header .botones #favoritos, body header .botones #cerrar {
-      width: 60px;
-      height: 60px;
-      margin: 0 1rem;
-      border-radius: 100px;
-      background-color: #FF872D;
-      border: none; }
-      body header .botones #verCarrito .logo-header, body header .botones #favoritos .logo-header, body header .botones #cerrar .logo-header {
-        width: 40px; }
-  body #main-index {
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse; }
-    body #main-index #blur.blurred {
-      position: absolute;
-      left: 0;
-      background-color: black;
-      opacity: 50%;
-      height: 100%;
-      width: calc(100% - 40rem);
-      z-index: 2; }
-    body #main-index #miCarrito.cont-carr {
-      display: flex;
-      background-color: #FFFAFA;
-      border-bottom: solid 2px black;
-      position: absolute;
-      right: 0;
-      width: 40rem;
-      height: calc(100vh - 125px);
-      z-index: 2; }
-      body #main-index #miCarrito.cont-carr .carritoVacio {
-        font-family: 'Lexend';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        color: #b0b0b0;
-        text-align: center; }
-      body #main-index #miCarrito.cont-carr .titulo-carrito {
-        font-family: 'Lexend';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        text-align: center;
-        text-transform: capitalize; }
-      body #main-index #miCarrito.cont-carr .div-carr {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 0.5rem;
-        padding: 0.5rem 0;
-        border-top: solid 2px black; }
-        body #main-index #miCarrito.cont-carr .div-carr .cont1 .img-producto-carrito {
-          width: 80px;
-          margin: 0 0.5rem; }
-        body #main-index #miCarrito.cont-carr .div-carr .cont1 .descripcion-carrito, body #main-index #miCarrito.cont-carr .div-carr .cont1 .precio, body #main-index #miCarrito.cont-carr .div-carr .cont1 .cantidad-carrito {
-          font-family: 'Lexend';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 24px;
-          margin: 0;
-          overflow: hidden;
-          height: 5rem; }
-        body #main-index #miCarrito.cont-carr .div-carr .cont3 div .precio {
-          font-family: 'Lexend';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 24px; }
-        body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont2 {
-          border: #040404 1px solid; }
-          body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont2 .cantidad-carrito {
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            margin: 0; }
-          body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont2 .boton {
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 26px;
-            border: none;
-            padding: 0;
-            background: none;
-            margin: 0 0.5rem; }
-        body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont-trash .trash {
-          background: transparent;
-          border: none;
-          padding: 0.5rem; }
-          body #main-index #miCarrito.cont-carr .div-carr .cont3 .cont-trash .trash .img-trash-carrito {
-            width: 30px; }
-      body #main-index #miCarrito.cont-carr .div-carr .cont1, body #main-index #miCarrito.cont-carr .div-carr .cont2, body #main-index #miCarrito.cont-carr .div-carr .cont3 {
-        display: flex;
-        align-items: center;
-        margin: 0 0.5rem; }
-      body #main-index #miCarrito.cont-carr .cont-btn-comprar {
-        display: flex;
-        flex-direction: column;
-        margin: 1rem 2rem;
-        border-top: solid 2px black; }
-        body #main-index #miCarrito.cont-carr .cont-btn-comprar .contenedor-total {
-          display: flex;
-          justify-content: space-between;
-          margin: 1rem 0; }
-          body #main-index #miCarrito.cont-carr .cont-btn-comprar .contenedor-total .txt-total, body #main-index #miCarrito.cont-carr .cont-btn-comprar .contenedor-total #resultado-total {
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 30px;
-            text-transform: uppercase; }
-        body #main-index #miCarrito.cont-carr .cont-btn-comprar #comprar {
-          border-radius: 10px;
-          padding: 0.5rem 1rem;
-          background-color: #FF872D;
-          border: none;
-          color: #FFFAFA;
-          font-family: 'Lexend';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 24px;
-          text-transform: uppercase;
-          text-align: center; }
-    body #main-index #misFavoritos.cont-fav {
-      display: flex;
-      background-color: #FFFAFA;
-      border-bottom: solid 2px black;
-      position: absolute;
-      right: 0;
-      width: 40rem;
-      height: calc(100vh - 125px);
-      z-index: 2; }
-      body #main-index #misFavoritos.cont-fav .favoritosVacio {
-        font-family: 'Lexend';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        text-align: center; }
-      body #main-index #misFavoritos.cont-fav .tituloMisFav {
-        font-family: 'Lexend';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        text-align: center;
-        text-transform: capitalize; }
-      body #main-index #misFavoritos.cont-fav .div-fav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 1rem;
-        padding: 0.5rem;
-        border-top: solid 2px black; }
-        body #main-index #misFavoritos.cont-fav .div-fav .img-producto-favoritos {
-          width: 80px; }
-        body #main-index #misFavoritos.cont-fav .div-fav .precio-fav, body #main-index #misFavoritos.cont-fav .div-fav .descripcion-fav {
-          font-family: 'Lexend';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 26px; }
-        body #main-index #misFavoritos.cont-fav .div-fav .cont-trash-fav .trash {
-          padding: 0.5rem;
-          background: transparent; }
-          body #main-index #misFavoritos.cont-fav .div-fav .cont-trash-fav .trash .img-trash-favoritos {
-            width: 30px; }
-    body #main-index #section-index {
-      width: 95%;
-      margin: 2rem 0;
-      display: grid;
-      grid-template-columns: 18rem auto; }
-      body #main-index #section-index #filtros {
-        margin-top: 0.5rem; }
-        body #main-index #section-index #filtros .cont-filtros {
-          position: fixed;
-          padding: 1.5rem;
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 10px;
-          background: #FFFAFA;
-          border-radius: 10px;
-          width: 14rem;
-          min-height: 22rem;
-          height: calc(100vh - 26rem);
-          box-shadow: rgba(0, 0, 0, 0.3) 1px 5px 10px; }
-          body #main-index #section-index #filtros .cont-filtros h2.title-filter {
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 30px;
-            text-transform: capitalize; }
-          body #main-index #section-index #filtros .cont-filtros #ordenador {
-            border: solid #040404 2px;
-            border-radius: 10px;
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 25px;
-            text-transform: capitalize;
-            height: 2.5rem; }
-          body #main-index #section-index #filtros .cont-filtros #quitarFiltros {
-            margin-top: 5rem; }
-          body #main-index #section-index #filtros .cont-filtros #quitarFiltros:hover {
-            background: #fce5be;
-            border: solid #FF872D 2px;
-            border-radius: 10px; }
-          body #main-index #section-index #filtros .cont-filtros .btn-filtro {
-            padding: 0.3rem;
-            background: transparent;
-            border: solid #040404 2px;
-            border-radius: 10px;
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 25px;
-            text-transform: capitalize;
-            height: 2.5rem; }
-            body #main-index #section-index #filtros .cont-filtros .btn-filtro .p-quitar-filtros {
-              margin: 0; }
-              body #main-index #section-index #filtros .cont-filtros .btn-filtro .p-quitar-filtros .quitar-filtros {
-                width: 15px; }
-          body #main-index #section-index #filtros .cont-filtros .select {
-            background: #fce5be;
-            border: solid #FF872D 2px;
-            border-radius: 10px; }
-      body #main-index #section-index #tienda {
-        display: grid;
-        grid-template-columns: auto auto auto; }
-        body #main-index #section-index #tienda .cont-card:hover {
-          transform: scale(1.05); }
-        body #main-index #section-index #tienda .cont-card {
-          margin: 0.5rem;
-          width: 20rem;
-          height: 26rem;
-          background-color: #FFFAFA;
-          border-radius: 10px; }
-          body #main-index #section-index #tienda .cont-card .img-card {
-            width: 100%;
-            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
-            border-radius: 10px; }
-          body #main-index #section-index #tienda .cont-card .description {
-            margin-top: 1rem; }
-            body #main-index #section-index #tienda .cont-card .description .card-nombre-producto {
-              font-family: 'Lexend';
-              font-style: normal;
-              font-weight: 600;
-              font-size: 20px;
-              margin: 0rem 2rem; }
-            body #main-index #section-index #tienda .cont-card .description .card-descripcion-producto {
-              font-family: 'Lexend';
-              font-style: normal;
-              font-weight: 400;
-              font-size: 20px;
-              margin: 0rem 2rem 1rem 2rem; }
-          body #main-index #section-index #tienda .cont-card #contCard {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 0 2rem 1.5rem 2rem; }
-            body #main-index #section-index #tienda .cont-card #contCard h2.precio {
-              font-family: 'Lexend';
-              font-style: normal;
-              font-weight: 400;
-              font-size: 32px; }
-            body #main-index #section-index #tienda .cont-card #contCard div#contAdds .btn-card {
-              border: none;
-              background: transparent; }
-              body #main-index #section-index #tienda .cont-card #contCard div#contAdds .btn-card .add-favoritos, body #main-index #section-index #tienda .cont-card #contCard div#contAdds .btn-card .add-carrito {
-                width: 30px; }
-            body #main-index #section-index #tienda .cont-card #contCard div#contAdds .btn-card :hover {
-              transform: scale(1.5); }

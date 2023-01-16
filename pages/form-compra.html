@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <head>
         <meta charset="UTF-8">
@@ -22,13 +22,14 @@
         <title>Toy's Store</title>
     </head>
 </head>
-<body>
+<body id="bodyComprar">
     <main id="main-Comprar">
         <section id="section-form">
-            <form class="row g-4">
+            <h1 id="h1-formulario">Formulario de Pago</h1>
+            <form id ="form" class="row g-4">
                 <div class="col-md-4">
                     <label for="inputName" class="form-label">Nombre Completo</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Nombre Apellido" required>
+                    <input name="nombreYApellido" type="text" class="form-control" id="inputName" placeholder="Nombre Apellido" required>
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
@@ -36,7 +37,7 @@
                 </div>
                 <div class="col-10">
                     <label for="inputAddress" class="form-label">Domicilio</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="calle 1234" required>
+                    <input name="direccion" type="text" class="form-control" id="inputAddress" placeholder="calle 1234" required>
                 </div>
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">Provincia</label>
@@ -58,11 +59,11 @@
                     <label for="inputNumSeguridad" class="form-label">Codigo de Seguridad</label>
                     <input type="number" class="form-control" id="inputNumSeguridad" placeholder="000" required>
                 </div>
+                <div class="col-10 div-btn-siguiente">
+                    <button id="siguiente" class="btn-siguiente">Siguiente</button>
+                </div>
             </form>
             
-            <div class="col-10">
-                <button id="siguiente" class="btn btn-primary">Siguiente</button>
-            </div>
         </section>
 
         <section id="section-resumen-compra">

@@ -28,7 +28,6 @@ const mostrarProductos = (stock) => {
         </div>
         <div id="contCard">
             <h2 class="precio">$${producto.precio}</h2>
-
             <div id="contAdds">
                 <button id="boton-addCarrito${producto.nombre}" class="btn-card">
                     <img class="add-carrito" src="img/logos/carrito.png" alt="">
@@ -219,7 +218,7 @@ verCarrito.addEventListener("click", () => {
     blur.classList.add("blurred")
     cerrar.style.display = "inline-block";
     if(!localStorage.getItem("carrito")) {
-        miCarrito.innerHTML= ""
+        miCarrito.innerHTML= " "
         miCarrito.classList.add("cont-carr")
         const tituloCarrito = document.createElement ("h1")
         tituloCarrito.classList.add("carritoVacio")
@@ -264,11 +263,3 @@ blur.addEventListener("click", () => {
     cerrar.style.display = "none";
     blur.classList.remove("blurred")
 });
-
-
-// {/* <button id="boton-addCarrito${producto.nombre}" class="btn-card">
-//                     <img class="add-carrito" src="img/logos/carrito.png" alt="">
-//                 </button>
-//                 <button id="boton-addfavoritos${producto.nombre}" class="btn-card">
-//                     <img class="add-favoritos" src="img/logos/favorito.png" alt="">
-//                 </button> */}

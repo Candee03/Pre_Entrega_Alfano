@@ -1,0 +1,154 @@
+body#bodyComprar {
+    background-color: #FFFAFA;
+    main#main-Comprar {
+        margin-top: 2rem;
+        #section-form {
+            padding: 1rem 0;
+            #h1-formulario{ 
+                font-family: 'Lexend';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            .row {
+                justify-content: center;
+                div {
+                    .form-label {
+                        font-family: 'Lexend';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
+                    .form-control, .form-select {
+                        font-family: 'Lexend';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        border-radius: 10px;
+                        border: black 2px solid;
+                    }
+                }
+                div.div-btn-siguiente {
+                    display: flex;
+                    justify-content: center;
+                    .btn-siguiente {
+                        font-family: 'Lexend';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 26px;
+                        border-radius: 10px;
+                        padding: 0.5rem 1rem;
+                        background-color: #FF872D;
+                        border: none;
+                        color: #FFFAFA;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        #section-resumen-compra {
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .div-resumen {
+                width: 60%;
+                .subtitulo-resumen {
+                    font-family: 'Lexend';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 26px;
+                    text-align: center;
+                }
+                .p-resumen-fecha {
+                    text-align: end;
+                    font-family: 'Lexend';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+                .p-resumen {
+                    font-family: 'Lexend';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+            }
+            .ul-listaResumen {
+                padding: 0 1rem;
+                margin: 0;
+                width: 60vw;
+                .li-listaResumen {
+                    padding: 0.5rem 0;
+                    border-bottom: 2px black solid ;
+                    display: flex;
+                    justify-content: space-between;
+                    .li-nombre {
+                        margin: 0;
+                        font-family: 'Lexend';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        width: 15rem;
+                    }
+                    .li-cant {
+                        margin: 0;
+                        font-family: 'Lexend';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
+                    .li-precio {
+                        margin: 0;
+                        font-family: 'Lexend';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .div-cantTotal {
+                margin-top: 1rem;
+                width: 60%;
+                display: flex;
+                justify-content: flex-end;
+                .p-cantTotal {
+                    font-family: 'Lexend';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+            }
+            .div-precioTotal {
+                width: 60%;
+                display: flex;
+                justify-content: flex-end;
+                .p-Total {
+                    font-family: 'Lexend';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+            button {
+                .link-confirmarYVolver {
+                    text-decoration: none;
+                    font-family: 'Lexend';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 26px;
+                    border-radius: 10px;
+                    padding: 0.5rem 1rem;
+                    background-color: #FF872D;
+                    border: none;
+                    color: #FFFAFA;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

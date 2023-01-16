@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     refresh()
 })
 
-
 const refresh = () => {
     traerStock().then(res => {
         ordenarMenorMayor(res)
