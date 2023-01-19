@@ -20,50 +20,96 @@
         <!--CSS-->
         <link rel="stylesheet" href="../css/main.css">
         <title>Toy's Store</title>
+        <link rel="icon"  href="../img/logos/38iXtwJ.ico">
     </head>
 </head>
 <body id="bodyComprar">
+    <header>
+        <h1 class="h1-header">Toy's Store</h1>
+    </header>
     <main id="main-Comprar">
         <section id="section-form">
-            <h1 id="h1-formulario">Formulario de Pago</h1>
+            <div id="cont-paso1">
+                <img id="paso1" src="../img/logos/uno.png" alt="">
+                <h1 id="h1-formulario">Formulario de Pago</h1>
+            </div>
             <form id ="form" class="row g-4">
-                <div class="col-md-4">
-                    <label for="inputName" class="form-label">Nombre Completo</label>
-                    <input name="nombreYApellido" type="text" class="form-control" id="inputName" placeholder="Nombre Apellido" required>
+                <div class="col-md-10">
+                    <label for="inputState" class="form-label">Tipo de Tarjeta</label>
+                    <select id="inputState" class="form-select">
+                        <option>Crédito</option>
+                        <option>Débito</option> 
+                    </select>
                 </div>
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@mail.com" required>
+                <div class="col-7">
+                    <label for="inputTarjeta" class="form-label">Numero de Tarjeta</label>
+                    <input name="datoTarjeta" type="number" max="18" class="form-control" id="inputTarjeta" placeholder="123456789012345678" required>
                 </div>
-                <div class="col-10">
-                    <label for="inputAddress" class="form-label">Domicilio</label>
-                    <input name="direccion" type="text" class="form-control" id="inputAddress" placeholder="calle 1234" required>
+                <div class="col-3">
+                    <label for="inputNumSeguridad" class="form-label">Vencimiento</label>
+                    <input type="month" min="2023-02" class="form-control" id="inputFechaVenc" placeholder="00/00" required>
                 </div>
+                <div class="col-md-7">
+                    <label for="inputNameTarjeta" class="form-label">Titular de la tarjeta (tal como figura)</label>
+                    <input name="nombreYApellido" type="text" class="form-control" id="inputNameTarjeta" placeholder="Nombre Apellido" required>
+                </div>
+                <div class="col-3">
+                    <label for="inputFechaVenc" class="form-label">CVV</label>
+                    <input type="number" max="3" class="form-control" id="inputNumSeguridad" placeholder="123" required>
+                </div>
+                <div class="cont-formDePago col-10">
+                    <div class="div-btn-volverALaTienda">
+                        <button id="volverALaTienda" class="btn-volverALaTienda">Elegir más productos</button>
+                    </div>
+                    <div class="div-btn-siguiente">
+                        <button id="siguiente" class="btn-siguiente"><a href="#paso2">Siguiente</a></button>
+                    </div>
+                </div>
+            </form>
+
+            <div id="cont-paso2">
+                <img id="paso2" src="../img/logos/dos.png" alt="">
+                <h1 id="h1-Datos">Datos de Envio</h1>
+            </div>
+            <form id ="DatosDeEnvio" class="row g-4">
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">Provincia</label>
-                    <select id="inputState" class="form-select">
-                    <option>Buenos Aires</option>
-                    <option>Córdoba</option>
-                    <option>Santa Fe</option>
+                    <select name="datoProvincia" id="inputState" class="form-select">
+                        <option>Buenos Aires</option>
+                        <option>Córdoba</option>
+                        <option>Santa Fe</option>
                     </select>
                 </div>
                 <div class="col-md-6">
                     <label for="inputCity" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="inputCity" required>
+                    <input name="datoCiudad" type="text" class="form-control" id="inputCity" required>
                 </div>
-                <div class="col-7">
-                    <label for="inputTarjeta" class="form-label">Numero de Tarjeta</label>
-                    <input type="number" class="form-control" id="inputTarjeta" placeholder="00000000000000000" required>
+                <div class="col-4">
+                    <label for="inputAddress" class="form-label">Calle</label>
+                    <input name="datoDomicilio" type="text" class="form-control" id="inputAddress" placeholder="calle" required>
                 </div>
                 <div class="col-3">
-                    <label for="inputNumSeguridad" class="form-label">Codigo de Seguridad</label>
-                    <input type="number" class="form-control" id="inputNumSeguridad" placeholder="000" required>
+                    <label for="inputAddressNum" class="form-label">Altura</label>
+                    <input name="adressNum" type="text" class="form-control" id="inputAddressNum" placeholder="1234" required>
                 </div>
-                <div class="col-10 div-btn-siguiente">
-                    <button id="siguiente" class="btn-siguiente">Siguiente</button>
+                <div class="col-3">
+                    <label for="inputAddressCP" class="form-label">Codigo Postal</label>
+                    <input name="adressCP" type="text" class="form-control" id="inputAddressCP" placeholder="5000" required>
+                </div>
+
+                <div class="col-md-10">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input name="datoEmail" type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@mail.com" required>
+                </div>
+                <div class="cont-formDePago col-10">
+                    <div class="div-btn-atras">
+                        <button id="atras" class="btn-atras"><a href="#paso1">Anterior</a></button>
+                    </div>
+                    <div class="div-btn-siguiente2">
+                        <button type="submit" id="siguiente2" class="btn-siguiente2">Siguiente</button>
+                    </div>
                 </div>
             </form>
-            
         </section>
 
         <section id="section-resumen-compra">

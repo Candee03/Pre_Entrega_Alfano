@@ -3,6 +3,7 @@ body{
         display: flex;
         justify-content: center;
         flex-direction: row-reverse;
+        margin: 0 7rem;
         #blur.blurred {
             position: absolute;
             left: 0;
@@ -19,7 +20,7 @@ body{
             position: absolute;
             right: 0;
             width: 40rem;
-            height: calc(100vh - 125px);
+            height: calc(100vh - 95.99px);
             z-index: 2;
             .carritoVacio {
                 font-family: 'Lexend';
@@ -141,7 +142,7 @@ body{
             position: absolute;
             right: 0;
             width: 40rem;
-            height: calc(100vh - 125px);
+            height: calc(100vh - 95.99px);
             z-index: 2;
             .favoritosVacio {
                 font-family: 'Lexend';
@@ -187,15 +188,14 @@ body{
             }
         }
         #section-index {
-            width: 95%;
             margin: 2rem 0;
             display: grid;
-            grid-template-columns: 18rem auto;
+            grid-template-columns: 17rem auto;
             #filtros {
                 margin-top: 0.5rem;
                 .cont-filtros {
                     position: fixed;
-                    padding: 1.5rem;
+                    padding: 1rem;
                     display: flex;
                     align-items: flex-start;
                     flex-direction: column;
@@ -203,7 +203,7 @@ body{
                     background: #FFFAFA;
                     border-radius: 10px;
                     width: 14rem;
-                    min-height: 22rem;
+                    min-height: 23rem;
                     height: calc(100vh - 26rem);
                     box-shadow: rgba(0, 0, 0, 0.3) 1px 5px 10px;    
                     h2.title-filter {
@@ -222,7 +222,7 @@ body{
                         font-size: 20px;
                         line-height: 25px;
                         text-transform: capitalize;
-                        height: 2.5rem;
+                        padding: 0.3rem;
                     }
                     #quitarFiltros {
                         margin-top: 5rem;
@@ -259,45 +259,45 @@ body{
                 }
             }
             #tienda {
-                display: grid;
-                grid-template-columns: auto auto auto;
+                display: flex;
+                flex-wrap: wrap;
                 .cont-card:hover {
                     transform: scale(1.05);
+                    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.393);
                 }
                 .cont-card {
                     margin: 0.5rem;
-                    width: 20rem;
-                    height: 26rem;
+                    width: 16rem;
                     background-color: #FFFAFA;
                     border-radius: 10px;
                     .img-card {
                         width: 100%;
-                        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
-                        border-radius: 10px;
+                        border-bottom: #b0b0b0c7 2px solid;
                     }
                     .description {
                         margin-top: 1rem;
-                        height: 6.5rem;
+                        height: 8rem;
+                        overflow: hidden;
                         .card-nombre-producto {
                             font-family: 'Lexend';
                             font-style: normal;
                             font-weight: 600;
                             font-size: 20px;
-                            margin: 0rem 2rem;
+                            margin: 0rem 1.5rem;
                         }
                         .card-descripcion-producto {
                             font-family: 'Lexend';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 20px;
-                            margin: 0rem 2rem 1rem 2rem;
+                            margin: 0rem 1.5rem 1rem 1.5rem;
                         }
                     }
                     #contCard {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        margin: 0 2rem 1.5rem 2rem;
+                        margin: 0 1.5rem 1.5rem 1.5rem;
                         h2.precio {
                             font-family: 'Lexend';
                             font-style: normal;

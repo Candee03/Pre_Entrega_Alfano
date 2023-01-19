@@ -1,19 +1,47 @@
 body#bodyComprar {
-    background-color: #FFFAFA;
+    overflow-y: hidden;
+    overflow-x: hidden;
     main#main-Comprar {
-        margin-top: 2rem;
+        background-color: #FFFAFA;
+        margin: 2rem 7rem;
         #section-form {
-            padding: 1rem 0;
-            #h1-formulario{ 
-                font-family: 'Lexend';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 32px;
-                text-align: center;
-                margin-bottom: 2rem;
+            padding:0;
+            #cont-paso1 {
+                display: flex;
+                padding-top: 2rem;
+                margin: 2rem;
+                #h1-formulario { 
+                    font-family: 'Lexend';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    margin-left: 2rem;
+                    margin-bottom: 0;
+                }
+                #paso1 {
+                    width: 45px;
+                }
+            }
+            #cont-paso2 {
+                display: flex;
+                padding-top: 2rem;
+                margin: 2rem;
+                #paso2 {
+                    width: 40px;
+                    filter: grayscale(1);
+                }
+                #h1-Datos { 
+                    font-family: 'Lexend';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    margin-left: 2rem;
+                    margin-bottom: 0;
+                }
             }
             .row {
                 justify-content: center;
+                margin-bottom: 3rem;
                 div {
                     .form-label {
                         font-family: 'Lexend';
@@ -30,57 +58,96 @@ body#bodyComprar {
                         border: black 2px solid;
                     }
                 }
-                div.div-btn-siguiente {
+                div.cont-formDePago {
                     display: flex;
                     justify-content: center;
-                    .btn-siguiente {
-                        font-family: 'Lexend';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 26px;
-                        border-radius: 10px;
-                        padding: 0.5rem 1rem;
-                        background-color: #FF872D;
-                        border: none;
-                        color: #FFFAFA;
-                        text-transform: uppercase;
-                        text-align: center;
+                    div.div-btn-siguiente, .div-btn-siguiente2 {
+                        display: flex;
+                        justify-content: center;
+                        margin-right: 1.5rem;
+                        .btn-siguiente, .btn-siguiente2 {
+                            font-family: 'Lexend';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 26px;
+                            border-radius: 10px;
+                            padding: 0.5rem 1rem;
+                            background-color: #FF872D;
+                            border: none;
+                            color: #FFFAFA;
+                            text-transform: uppercase;
+                            text-align: center;
+                            a {
+                                text-decoration: none;
+                                color: #FFFAFA;
+                            }
+                        }
+                    }
+                    .div-btn-volverALaTienda, .div-btn-atras {
+                        @extend .div-btn-siguiente;
+                        .btn-volverALaTienda, .btn-atras {
+                            font-family: 'Lexend';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 26px;
+                            border-radius: 10px;
+                            padding: 0.5rem 1rem;
+                            border: none;
+                            color: #FF872D;
+                            text-transform: uppercase;
+                            text-align: center;
+                            background-color: #fce5be;
+                            a {
+                                text-decoration: none;
+                                color: #FF872D;
+                            }
+                        }
                     }
                 }
             }
         }
         #section-resumen-compra {
+            height: 100rem;
             margin-bottom: 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            .div-resumen {
-                width: 60%;
+            .cont-paso3 {
+                display: flex;
+                margin: 2rem 0;
+                width: 75vw;
+                #paso3 {
+                    width: 40px;
+                    margin-right: 2rem;
+                }
                 .subtitulo-resumen {
                     font-family: 'Lexend';
                     font-style: normal;
                     font-weight: 600;
                     font-size: 26px;
-                    text-align: center;
                 }
-                .p-resumen-fecha {
-                    text-align: end;
-                    font-family: 'Lexend';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 18px;
-                }
-                .p-resumen {
-                    font-family: 'Lexend';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 18px;
+            }
+            .div-resumen {
+                width: 60%;
+                #cont-pResumen {
+                    .p-resumen-fecha {
+                        font-family: 'Lexend';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                    .p-resumen {
+                        font-family: 'Lexend';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
                 }
             }
             .ul-listaResumen {
                 padding: 0 1rem;
                 margin: 0;
-                width: 60vw;
+                width: 52vw;
                 .li-listaResumen {
                     padding: 0.5rem 0;
                     border-bottom: 2px black solid ;
@@ -133,20 +200,46 @@ body#bodyComprar {
                     font-size: 20px;
                 }
             }
-            button {
-                .link-confirmarYVolver {
-                    text-decoration: none;
-                    font-family: 'Lexend';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 26px;
-                    border-radius: 10px;
-                    padding: 0.5rem 1rem;
-                    background-color: #FF872D;
-                    border: none;
-                    color: #FFFAFA;
-                    text-transform: uppercase;
-                    text-align: center;
+            p {
+                text-decoration: none;
+                font-family: 'Lexend';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                margin-top: 1.5rem;
+            }
+            div {
+                button {
+                    margin-top: 1.5rem;
+                    margin-left: 2rem;
+                    .link-confirmarYVolver {
+                        text-decoration: none;
+                        font-family: 'Lexend';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 26px;
+                        border-radius: 10px;
+                        padding: 0.5rem 1rem;
+                        background-color: #FF872D;
+                        border: none;
+                        color: #FFFAFA;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+                    .btn-atras-resumen {
+                        font-family: 'Lexend';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 26px;
+                        border-radius: 10px;
+                        padding: 0.5rem 1rem;
+                        border: none;
+                        text-transform: uppercase;
+                        text-align: center;
+                        background-color: #fce5be;
+                        text-decoration: none;
+                        color: #FF872D;
+                    }
                 }
             }
         }

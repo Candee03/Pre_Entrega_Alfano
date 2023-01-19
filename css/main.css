@@ -1,18 +1,41 @@
 body#bodyComprar {
-  background-color: #FFFAFA; }
+  overflow-y: hidden;
+  overflow-x: hidden; }
   body#bodyComprar main#main-Comprar {
-    margin-top: 2rem; }
+    background-color: #FFFAFA;
+    margin: 2rem 7rem; }
     body#bodyComprar main#main-Comprar #section-form {
-      padding: 1rem 0; }
-      body#bodyComprar main#main-Comprar #section-form #h1-formulario {
-        font-family: 'Lexend';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        text-align: center;
-        margin-bottom: 2rem; }
+      padding: 0; }
+      body#bodyComprar main#main-Comprar #section-form #cont-paso1 {
+        display: flex;
+        padding-top: 2rem;
+        margin: 2rem; }
+        body#bodyComprar main#main-Comprar #section-form #cont-paso1 #h1-formulario {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          margin-left: 2rem;
+          margin-bottom: 0; }
+        body#bodyComprar main#main-Comprar #section-form #cont-paso1 #paso1 {
+          width: 45px; }
+      body#bodyComprar main#main-Comprar #section-form #cont-paso2 {
+        display: flex;
+        padding-top: 2rem;
+        margin: 2rem; }
+        body#bodyComprar main#main-Comprar #section-form #cont-paso2 #paso2 {
+          width: 40px;
+          filter: grayscale(1); }
+        body#bodyComprar main#main-Comprar #section-form #cont-paso2 #h1-Datos {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          margin-left: 2rem;
+          margin-bottom: 0; }
       body#bodyComprar main#main-Comprar #section-form .row {
-        justify-content: center; }
+        justify-content: center;
+        margin-bottom: 3rem; }
         body#bodyComprar main#main-Comprar #section-form .row div .form-label {
           font-family: 'Lexend';
           font-style: normal;
@@ -25,41 +48,69 @@ body#bodyComprar {
           font-size: 18px;
           border-radius: 10px;
           border: black 2px solid; }
-        body#bodyComprar main#main-Comprar #section-form .row div.div-btn-siguiente {
+        body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago {
           display: flex;
           justify-content: center; }
-          body#bodyComprar main#main-Comprar #section-form .row div.div-btn-siguiente .btn-siguiente {
+          body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-siguiente, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-volverALaTienda, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-atras, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-siguiente2 {
+            display: flex;
+            justify-content: center;
+            margin-right: 1.5rem; }
+            body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-siguiente .btn-siguiente, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-volverALaTienda .btn-siguiente, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-atras .btn-siguiente, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-siguiente .btn-siguiente2, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-volverALaTienda .btn-siguiente2, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-atras .btn-siguiente2, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-siguiente2 .btn-siguiente, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-siguiente2 .btn-siguiente2 {
+              font-family: 'Lexend';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 26px;
+              border-radius: 10px;
+              padding: 0.5rem 1rem;
+              background-color: #FF872D;
+              border: none;
+              color: #FFFAFA;
+              text-transform: uppercase;
+              text-align: center; }
+              body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-siguiente .btn-siguiente a, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-volverALaTienda .btn-siguiente a, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-atras .btn-siguiente a, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-siguiente .btn-siguiente2 a, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-volverALaTienda .btn-siguiente2 a, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago div.div-btn-atras .btn-siguiente2 a, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-siguiente2 .btn-siguiente a, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-siguiente2 .btn-siguiente2 a {
+                text-decoration: none;
+                color: #FFFAFA; }
+          body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-volverALaTienda .btn-volverALaTienda, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-volverALaTienda .btn-atras, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-atras .btn-volverALaTienda, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-atras .btn-atras {
             font-family: 'Lexend';
             font-style: normal;
             font-weight: 400;
             font-size: 26px;
             border-radius: 10px;
             padding: 0.5rem 1rem;
-            background-color: #FF872D;
             border: none;
-            color: #FFFAFA;
+            color: #FF872D;
             text-transform: uppercase;
-            text-align: center; }
+            text-align: center;
+            background-color: #fce5be; }
+            body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-volverALaTienda .btn-volverALaTienda a, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-volverALaTienda .btn-atras a, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-atras .btn-volverALaTienda a, body#bodyComprar main#main-Comprar #section-form .row div.cont-formDePago .div-btn-atras .btn-atras a {
+              text-decoration: none;
+              color: #FF872D; }
     body#bodyComprar main#main-Comprar #section-resumen-compra {
+      height: 100rem;
       margin-bottom: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center; }
-      body#bodyComprar main#main-Comprar #section-resumen-compra .div-resumen {
-        width: 60%; }
-        body#bodyComprar main#main-Comprar #section-resumen-compra .div-resumen .subtitulo-resumen {
+      body#bodyComprar main#main-Comprar #section-resumen-compra .cont-paso3 {
+        display: flex;
+        margin: 2rem 0;
+        width: 75vw; }
+        body#bodyComprar main#main-Comprar #section-resumen-compra .cont-paso3 #paso3 {
+          width: 40px;
+          margin-right: 2rem; }
+        body#bodyComprar main#main-Comprar #section-resumen-compra .cont-paso3 .subtitulo-resumen {
           font-family: 'Lexend';
           font-style: normal;
           font-weight: 600;
-          font-size: 26px;
-          text-align: center; }
-        body#bodyComprar main#main-Comprar #section-resumen-compra .div-resumen .p-resumen-fecha {
-          text-align: end;
+          font-size: 26px; }
+      body#bodyComprar main#main-Comprar #section-resumen-compra .div-resumen {
+        width: 60%; }
+        body#bodyComprar main#main-Comprar #section-resumen-compra .div-resumen #cont-pResumen .p-resumen-fecha {
           font-family: 'Lexend';
           font-style: normal;
           font-weight: 600;
           font-size: 18px; }
-        body#bodyComprar main#main-Comprar #section-resumen-compra .div-resumen .p-resumen {
+        body#bodyComprar main#main-Comprar #section-resumen-compra .div-resumen #cont-pResumen .p-resumen {
           font-family: 'Lexend';
           font-style: normal;
           font-weight: 400;
@@ -67,7 +118,7 @@ body#bodyComprar {
       body#bodyComprar main#main-Comprar #section-resumen-compra .ul-listaResumen {
         padding: 0 1rem;
         margin: 0;
-        width: 60vw; }
+        width: 52vw; }
         body#bodyComprar main#main-Comprar #section-resumen-compra .ul-listaResumen .li-listaResumen {
           padding: 0.5rem 0;
           border-bottom: 2px black solid;
@@ -111,24 +162,48 @@ body#bodyComprar {
           font-style: normal;
           font-weight: 600;
           font-size: 20px; }
-      body#bodyComprar main#main-Comprar #section-resumen-compra button .link-confirmarYVolver {
+      body#bodyComprar main#main-Comprar #section-resumen-compra p {
         text-decoration: none;
         font-family: 'Lexend';
         font-style: normal;
         font-weight: 400;
-        font-size: 26px;
-        border-radius: 10px;
-        padding: 0.5rem 1rem;
-        background-color: #FF872D;
-        border: none;
-        color: #FFFAFA;
-        text-transform: uppercase;
-        text-align: center; }
+        font-size: 20px;
+        margin-top: 1.5rem; }
+      body#bodyComprar main#main-Comprar #section-resumen-compra div button {
+        margin-top: 1.5rem;
+        margin-left: 2rem; }
+        body#bodyComprar main#main-Comprar #section-resumen-compra div button .link-confirmarYVolver {
+          text-decoration: none;
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 26px;
+          border-radius: 10px;
+          padding: 0.5rem 1rem;
+          background-color: #FF872D;
+          border: none;
+          color: #FFFAFA;
+          text-transform: uppercase;
+          text-align: center; }
+        body#bodyComprar main#main-Comprar #section-resumen-compra div button .btn-atras-resumen {
+          font-family: 'Lexend';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 26px;
+          border-radius: 10px;
+          padding: 0.5rem 1rem;
+          border: none;
+          text-transform: uppercase;
+          text-align: center;
+          background-color: #fce5be;
+          text-decoration: none;
+          color: #FF872D; }
 
 body #main-index {
   display: flex;
   justify-content: center;
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  margin: 0 7rem; }
   body #main-index #blur.blurred {
     position: absolute;
     left: 0;
@@ -144,7 +219,7 @@ body #main-index {
     position: absolute;
     right: 0;
     width: 40rem;
-    height: calc(100vh - 125px);
+    height: calc(100vh - 95.99px);
     z-index: 2; }
     body #main-index #miCarrito.cont-carr .carritoVacio {
       font-family: 'Lexend';
@@ -245,7 +320,7 @@ body #main-index {
     position: absolute;
     right: 0;
     width: 40rem;
-    height: calc(100vh - 125px);
+    height: calc(100vh - 95.99px);
     z-index: 2; }
     body #main-index #misFavoritos.cont-fav .favoritosVacio {
       font-family: 'Lexend';
@@ -281,15 +356,14 @@ body #main-index {
         body #main-index #misFavoritos.cont-fav .div-fav .cont-trash-fav .trash .img-trash-favoritos {
           width: 30px; }
   body #main-index #section-index {
-    width: 95%;
     margin: 2rem 0;
     display: grid;
-    grid-template-columns: 18rem auto; }
+    grid-template-columns: 17rem auto; }
     body #main-index #section-index #filtros {
       margin-top: 0.5rem; }
       body #main-index #section-index #filtros .cont-filtros {
         position: fixed;
-        padding: 1.5rem;
+        padding: 1rem;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -297,7 +371,7 @@ body #main-index {
         background: #FFFAFA;
         border-radius: 10px;
         width: 14rem;
-        min-height: 22rem;
+        min-height: 23rem;
         height: calc(100vh - 26rem);
         box-shadow: rgba(0, 0, 0, 0.3) 1px 5px 10px; }
         body #main-index #section-index #filtros .cont-filtros h2.title-filter {
@@ -315,7 +389,7 @@ body #main-index {
           font-size: 20px;
           line-height: 25px;
           text-transform: capitalize;
-          height: 2.5rem; }
+          padding: 0.3rem; }
         body #main-index #section-index #filtros .cont-filtros #quitarFiltros {
           margin-top: 5rem; }
         body #main-index #section-index #filtros .cont-filtros #quitarFiltros:hover {
@@ -343,40 +417,40 @@ body #main-index {
           border: solid #FF872D 2px;
           border-radius: 10px; }
     body #main-index #section-index #tienda {
-      display: grid;
-      grid-template-columns: auto auto auto; }
+      display: flex;
+      flex-wrap: wrap; }
       body #main-index #section-index #tienda .cont-card:hover {
-        transform: scale(1.05); }
+        transform: scale(1.05);
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.393); }
       body #main-index #section-index #tienda .cont-card {
         margin: 0.5rem;
-        width: 20rem;
-        height: 26rem;
+        width: 16rem;
         background-color: #FFFAFA;
         border-radius: 10px; }
         body #main-index #section-index #tienda .cont-card .img-card {
           width: 100%;
-          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
-          border-radius: 10px; }
+          border-bottom: #b0b0b0c7 2px solid; }
         body #main-index #section-index #tienda .cont-card .description {
           margin-top: 1rem;
-          height: 6.5rem; }
+          height: 8rem;
+          overflow: hidden; }
           body #main-index #section-index #tienda .cont-card .description .card-nombre-producto {
             font-family: 'Lexend';
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
-            margin: 0rem 2rem; }
+            margin: 0rem 1.5rem; }
           body #main-index #section-index #tienda .cont-card .description .card-descripcion-producto {
             font-family: 'Lexend';
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
-            margin: 0rem 2rem 1rem 2rem; }
+            margin: 0rem 1.5rem 1rem 1.5rem; }
         body #main-index #section-index #tienda .cont-card #contCard {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin: 0 2rem 1.5rem 2rem; }
+          margin: 0 1.5rem 1.5rem 1.5rem; }
           body #main-index #section-index #tienda .cont-card #contCard h2.precio {
             font-family: 'Lexend';
             font-style: normal;
@@ -391,7 +465,7 @@ body #main-index {
             transform: scale(1.5); }
 
 body header {
-  height: 8rem;
+  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -402,19 +476,24 @@ body header {
     font-family: 'Limelight';
     font-style: normal;
     font-weight: 400;
-    font-size: 96px;
+    font-size: 92px;
     line-height: 117px;
     letter-spacing: -0.025em;
-    margin-left: 10rem; }
-  body header .botones #verCarrito, body header .botones #favoritos, body header .botones #cerrar {
-    width: 60px;
-    height: 60px;
-    margin: 0 1rem;
-    border-radius: 100px;
-    background-color: #FF872D;
-    border: none; }
-    body header .botones #verCarrito .logo-header, body header .botones #favoritos .logo-header, body header .botones #cerrar .logo-header {
-      width: 40px; }
+    margin-left: 7rem; }
+  body header .botones {
+    display: flex;
+    align-items: center;
+    margin-right: 7rem; }
+    body header .botones #verCarrito, body header .botones #favoritos, body header .botones #cerrar {
+      margin: 0 1rem;
+      padding: 0.3rem;
+      border-radius: 100px;
+      background-color: #FF872D;
+      border: none; }
+      body header .botones #verCarrito .logo-header, body header .botones #favoritos .logo-header, body header .botones #cerrar .logo-header {
+        width: 37px;
+        padding: 0.3rem;
+        margin: 0.3rem; }
 
 * {
   margin: 0;

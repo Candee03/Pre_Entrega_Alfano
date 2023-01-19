@@ -1,6 +1,6 @@
 body {
     header {
-        height: 8rem;
+        height: 6rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -11,21 +11,25 @@ body {
             font-family: 'Limelight';
             font-style: normal;
             font-weight: 400;
-            font-size: 96px;
+            font-size: 92px;
             line-height: 117px;
             letter-spacing: -0.025em;
-            margin-left: 10rem;
+            margin-left: 7rem;
         }
         .botones {
+            display: flex;
+            align-items: center;
+            margin-right: 7rem;
             #verCarrito, #favoritos, #cerrar {
-                width: 60px;
-                height: 60px;
                 margin: 0 1rem;
+                padding: 0.3rem;
                 border-radius: 100px;
                 background-color: #FF872D;
                 border: none;
                 .logo-header {
-                    width: 40px;
+                    width: 37px;
+                    padding: 0.3rem;
+                    margin: 0.3rem;
                 }
             }
         }
