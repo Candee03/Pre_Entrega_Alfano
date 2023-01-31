@@ -495,6 +495,75 @@ body header {
         padding: 0.3rem;
         margin: 0.3rem; }
 
+@media (max-width: 950px) {
+  body header h1.h1-header {
+    margin-left: 3rem;
+    font-size: 60px; }
+  body header .botones {
+    margin-right: 3rem; }
+  body #main-index {
+    margin: 0 3rem; }
+    body #main-index #blur.blurred {
+      width: calc(100% - 30rem); }
+    body #main-index #miCarrito.cont-carr {
+      width: 30rem; }
+    body #main-index #misFavoritos.cont-fav {
+      width: 30rem; }
+    body #main-index #section-index {
+      display: grid;
+      grid-template-rows: 16rem auto;
+      grid-template-columns: none; }
+      body #main-index #section-index #filtros .cont-filtros {
+        height: 12rem;
+        width: 90%;
+        position: relative;
+        padding: 1rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: auto; }
+        body #main-index #section-index #filtros .cont-filtros #ordenador {
+          width: 100%; }
+        body #main-index #section-index #filtros .cont-filtros #quitarFiltros {
+          margin: 0; }
+      body #main-index #section-index #tienda .cont-card {
+        margin: 0.3rem; } }
+
+@media (max-width: 600px) {
+  body header h1.h1-header {
+    margin-left: 1.5rem;
+    font-size: 45px;
+    line-height: 39px; }
+  body header .botones {
+    margin-right: 1.5rem; }
+    body header .botones #verCarrito, body header .botones #favoritos, body header .botones #cerrar {
+      margin: 0 0.3rem; }
+      body header .botones #verCarrito .logo-header, body header .botones #favoritos .logo-header, body header .botones #cerrar .logo-header {
+        width: 30px; }
+  body #main-index {
+    margin: 0 1.5rem; }
+    body #main-index #blur.blurred {
+      width: calc(100% - 100%); }
+    body #main-index #miCarrito.cont-carr {
+      width: 100%;
+      height: calc(100% - 95.99px); }
+      body #main-index #miCarrito.cont-carr .div-carr {
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: center; }
+    body #main-index #misFavoritos.cont-fav {
+      width: 100%;
+      height: calc(100% - 95.99px); }
+    body #main-index #section-index #tienda .cont-card {
+      width: 100%;
+      height: 20rem; }
+      body #main-index #section-index #tienda .cont-card .img-card {
+        width: 60%;
+        border-bottom: none; }
+      body #main-index #section-index #tienda .cont-card .description {
+        height: 5rem; } }
+
 * {
   margin: 0;
   padding: 0;

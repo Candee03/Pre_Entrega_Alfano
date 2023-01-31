@@ -1,0 +1,108 @@
+@media (max-width: 950px) {
+    body {
+        header {
+            h1.h1-header {
+                margin-left: 3rem;
+                font-size: 60px;
+            }
+            .botones {
+                margin-right: 3rem;
+            }
+        }
+        #main-index {
+            margin: 0 3rem;
+            #blur.blurred {
+                width: calc(100% - 30rem);
+            }
+            #miCarrito.cont-carr {
+                width: 30rem;
+            }
+            #misFavoritos.cont-fav {
+                width: 30rem;
+            }
+            #section-index {
+                display: grid;
+                grid-template-rows: 16rem auto;
+                grid-template-columns: none;
+                #filtros {
+                    .cont-filtros {
+                        height: 12rem;
+                        width: 90%;
+                        position: relative;
+                        padding: 1rem;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        min-height:auto;
+                        #ordenador {
+                            width: 100%;
+                        }
+                        #quitarFiltros {
+                            margin: 0;
+                        }
+                    }
+                }
+                #tienda {
+                    .cont-card {
+                        margin: 0.3rem;
+                    }
+                }
+            }
+        } 
+    }
+}
+@media (max-width: 600px) {
+    body {
+        header {
+            h1.h1-header {
+                margin-left: 1.5rem;
+                font-size: 45px;
+                line-height: 39px;
+            }
+            .botones {
+                margin-right: 1.5rem;
+                #verCarrito, #favoritos, #cerrar {
+                    margin: 0 0.3rem;
+                    .logo-header {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+        #main-index {
+            margin: 0 1.5rem;
+            #blur.blurred {
+                width: calc(100% - 100%);
+            }
+            #miCarrito.cont-carr {
+                width: 100%;
+                height: calc(100% - 95.99px);
+                .div-carr {
+                    flex-wrap: wrap;
+                    margin: 0;
+                    justify-content: center;
+                }
+            }
+            #misFavoritos.cont-fav {
+                width: 100%;
+                height: calc(100% - 95.99px);
+            }
+            #section-index {
+                #tienda {
+                    .cont-card {
+                        width: 100%;
+                        height: 20rem;
+                        .img-card {
+                            width: 60%;
+                            border-bottom: none;
+                        }
+                        .description {
+                            height: 5rem;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
